@@ -50,7 +50,7 @@ while(True):
     s = main.findAll('li',attrs = {'class' : 'reusable-search__result-container' })
     for profile in s:
         pro = []
-        time.sleep(2)
+        time.sleep(8)
         pro_link = profile.find('a')['href']
         driver.get(pro_link)
         print(pro_link)
@@ -101,7 +101,6 @@ while(True):
         pro.append(connections.strip())
         pro.append(username.strip())
         if(name.strip() != ""):
-            
             print(pro)
         # opening the csv file in 'a+' mode
             with open('profiles.csv', 'a+',encoding="utf-8",newline='') as file:
