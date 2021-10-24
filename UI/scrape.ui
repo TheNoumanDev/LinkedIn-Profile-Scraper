@@ -1,0 +1,2193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>886</width>
+    <height>587</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>886</width>
+    <height>587</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame{
+background-color:rgba(7, 19, 35, 240);
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>0</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color: rgba(0,0,0,0);
+   color: white
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: rgba(0,0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>0</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color: rgba(0,0,0,0);
+   color: white
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: rgba(0,0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white</string>
+     </property>
+     <property name="text">
+      <string>&lt;strong&gt;Scraping&lt;/strong&gt; Window</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>891</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_2{
+background-color:rgba(16, 30, 41, 240);
+}
+
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>-160</x>
+       <y>70</y>
+       <width>1071</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {
+background-color:rgba(16, 30, 41, 240); 
+color:rgba(16, 30, 41, 240); 
+ }
+QTabBar{
+background-color:rgba(16, 30, 41, 240);
+}
+
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab1">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(16, 30, 41, 240);
+border:none</string>
+      </property>
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>70</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Pakistan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>India</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Australia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bangladesh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dubai</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nigeria</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>50</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Select Contry</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>110</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Profiles Amount</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>130</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>Profile Amount</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>180</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>230</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Pause</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>280</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Stop</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>330</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>390</y>
+         <width>611</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid grey;
+text-align: center;
+    border-radius: 5px;
+}
+
+QProgressBar::chunk {
+    background-color: #05B8CC;
+    width: 20px;
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>950</x>
+         <y>420</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>5692 Done</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>420</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>6m 53s</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>30</y>
+         <width>601</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Full Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Job Designation</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Company</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Connections</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab2">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(16, 30, 41, 240);
+border:none</string>
+      </property>
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Import CSV File:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>70</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Import</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>69</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>Imported File</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>190</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Insertion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Quick</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bubble</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Selection</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Merge</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ClockTail</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Counting</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Radix</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bucket</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>130</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Full Name</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Job Designer</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Company</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>No. of connections</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>170</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Select Algorithm</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>110</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Select Column</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>220</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Select Order</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>240</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Ascending</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Decending</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>280</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Sort</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>290</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>6m 53s</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>360</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>340</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Export Sorted Data</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>30</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Table:</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>60</y>
+         <width>571</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Full Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Job Designation</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Company</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Connections</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(16, 30, 41, 240);
+border:none</string>
+      </property>
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>30</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Table:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Import CSV File:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>59</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>Imported File</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>60</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Import</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>Nouman Tariq</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>100</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Type Name:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>150</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>170</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>@Nouman0x45</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>200</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Company</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>220</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string>UET Lahore</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>300</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Connections</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>330</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>330</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>45</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_5">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>270</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Pakistan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>India</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Australia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bangladesh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dubai</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nigeria</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>250</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Select Contry</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>370</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_6">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>120</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>AND</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOT</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_7">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>170</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>AND</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOT</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_8">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>220</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>AND</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOT</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_9">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>270</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>AND</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOT</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>50</y>
+         <width>571</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Full Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Job Designation</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Company</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Connections</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>891</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+      </property>
+      <property name="text">
+       <string>Sort</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgba(0,125,236,255);
+border-radius:10px;
+background-color:rgb(16, 29, 41)</string>
+      </property>
+      <property name="text">
+       <string>&lt;strong&gt;LinkedIn&lt;/strong&gt; Scraper</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+      </property>
+      <property name="text">
+       <string>Scrape</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>891</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(16, 30, 41, 240);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
