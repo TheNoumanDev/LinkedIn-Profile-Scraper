@@ -11,6 +11,7 @@ import time
 import csv
 from scrape import Ui_MainWindow
 from sorting_algorithms import algorithm
+from Searching import Searching
 import threading
 
 class Mainwindow(QMainWindow):    
@@ -20,6 +21,7 @@ class Mainwindow(QMainWindow):
         
         self.ui = Ui_MainWindow()
         self.al = algorithm()
+        self.se = Searching()
         self.listt = []
         self.ui.setupUi(self)
         self.model = QtGui.QStandardItemModel(self)
@@ -66,7 +68,7 @@ class Mainwindow(QMainWindow):
         with open(namee, "r",encoding="utf-8") as fileInput:
             data = list(csv.reader(fileInput))
             
-        arr = self.al.search(data,ent)
+        arr = self.se.search(data,ent)
         self.searchTable(arr)
        
     def searchad(self):
@@ -130,7 +132,7 @@ class Mainwindow(QMainWindow):
         with open(namee, "r",encoding="utf-8") as fileInput:
             data = list(csv.reader(fileInput))
         
-        asd = self.al.Search_ad(data,name,name_a,0,user,user_a,6,comp,comp_a,2,count,count_a,4,connec,5)
+        asd = self.se.Search_ad(data,name,name_a,0,user,user_a,6,comp,comp_a,2,count,count_a,4,connec,5)
         self.searchadTable(asd)
     
     def searchTable(self,sorted):
@@ -978,7 +980,7 @@ class Mainwindow(QMainWindow):
 
         
     def start_scrape(self):
-        
+        self.stop_flag = False
         thread = threading.Thread(target= self.login)
         thread.start()
         #time.sleep(60)
@@ -1211,6 +1213,10 @@ class Mainwindow(QMainWindow):
                         self.ui.tableWidget_3.setItem(row , 6 , QtWidgets.QTableWidgetItem((proo[3])))  
                         time.sleep(randrange(2,3))
                         self.ui.progressBar.setValue(self.ui.progressBar.value() + 1)
+                        self.ui.label_5.setText(str(done) + " Done")
+                        end = time.perf_counter()
+                        a = str(round(end - start,2)) + " Seconds"
+                        self.ui.label_6.setText(a)
                 if self.stop_flag == True:
                     print("  Exiting loop.")
                     break        
@@ -1225,9 +1231,9 @@ class Mainwindow(QMainWindow):
             if ((done == num and done > num ) or self.stop_flag == True):
                 print("  Exiting loop.")
                 end = time.perf_counter()
-                a = round(end - start,2) + " Seconds"
+                a = str(round(end - start,2)) + " Seconds"
                 self.ui.label_6.setText(a)
-                self.ui.label_5.setText(done + " Done")
+                
                 break
             if (self.pause_flag == True):
                 self.link = link
