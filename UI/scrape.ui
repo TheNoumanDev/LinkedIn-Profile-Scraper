@@ -181,7 +181,7 @@ background-color:rgba(16, 30, 41, 240);
 </string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tab1">
       <property name="styleSheet">
@@ -247,36 +247,6 @@ QComboBox::drop-down {
        <property name="editable">
         <bool>true</bool>
        </property>
-       <item>
-        <property name="text">
-         <string>Pakistan</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>India</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Australia</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Bangladesh</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Dubai</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Nigeria</string>
-        </property>
-       </item>
       </widget>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
@@ -326,6 +296,9 @@ QComboBox::drop-down {
 </string>
        </property>
        <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
         <string>Profile Amount</string>
        </property>
       </widget>
@@ -432,7 +405,7 @@ QPushButton:pressed {
        <property name="geometry">
         <rect>
          <x>280</x>
-         <y>330</y>
+         <y>370</y>
          <width>101</width>
          <height>41</height>
         </rect>
@@ -473,13 +446,15 @@ QPushButton:pressed {
        <property name="styleSheet">
         <string notr="true">QProgressBar {
     border: 2px solid grey;
-text-align: center;
+    text-align: center;
     border-radius: 5px;
+    color:white
 }
 
 QProgressBar::chunk {
     background-color: #05B8CC;
     width: 20px;
+   color:white
 }</string>
        </property>
        <property name="value">
@@ -535,51 +510,15 @@ QProgressBar::chunk {
          <height>351</height>
         </rect>
        </property>
-       <row>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>4</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>5</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>6</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>7</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>8</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>9</string>
-        </property>
-       </row>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+
+background-color:rgb(215, 215, 215);
+color:black;
+
+
+}</string>
+       </property>
        <column>
         <property name="text">
          <string>Full Name</string>
@@ -592,12 +531,12 @@ QProgressBar::chunk {
        </column>
        <column>
         <property name="text">
-         <string>Address</string>
+         <string>Connections</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Job Designation</string>
+         <string>Country</string>
         </property>
        </column>
        <column>
@@ -607,14 +546,57 @@ QProgressBar::chunk {
        </column>
        <column>
         <property name="text">
-         <string>Connections</string>
+         <string>Job Designation</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Country</string>
+         <string>Address</string>
         </property>
        </column>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>340</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+background-color:rgb(215, 215, 215);
+text: &quot;sadsad&quot;
+}
+QLineEdit:focus{
+ text:&quot;  &quot;;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Exported CSV file Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>320</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Enter Name</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tab2">
@@ -689,6 +671,9 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
         <string>Imported File</string>
        </property>
       </widget>
@@ -775,22 +760,22 @@ QComboBox::drop-down {
        </item>
        <item>
         <property name="text">
-         <string>ClockTail</string>
+         <string>TimSort</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Counting</string>
+         <string>Shell</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Radix</string>
+         <string>CocktailSort</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Bucket</string>
+         <string>CombSort</string>
         </property>
        </item>
       </widget>
@@ -862,22 +847,12 @@ QComboBox::drop-down {
        </item>
        <item>
         <property name="text">
-         <string>Job Designer</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>Company</string>
         </property>
        </item>
        <item>
         <property name="text">
          <string>No. of connections</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Address</string>
         </property>
        </item>
        <item>
@@ -1040,8 +1015,8 @@ QPushButton:pressed {
       <widget class="QLabel" name="label_11">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>290</y>
+         <x>250</x>
+         <y>300</y>
          <width>71</width>
          <height>16</height>
         </rect>
@@ -1051,7 +1026,7 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
-        <string>6m 53s</string>
+        <string>0.2 Seconds</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1060,8 +1035,8 @@ QPushButton:pressed {
       <widget class="QPushButton" name="pushButton_12">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>360</y>
+         <x>340</x>
+         <y>350</y>
          <width>101</width>
          <height>41</height>
         </rect>
@@ -1124,60 +1099,24 @@ QPushButton:pressed {
         <string>Table:</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tableWidget_2">
+      <widget class="QTableWidget" name="tableWidget_4">
        <property name="geometry">
         <rect>
          <x>460</x>
          <y>60</y>
-         <width>571</width>
-         <height>371</height>
+         <width>601</width>
+         <height>351</height>
         </rect>
        </property>
-       <row>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>4</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>5</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>6</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>7</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>8</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>9</string>
-        </property>
-       </row>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+
+background-color:rgb(215, 215, 215);
+color:black;
+
+
+}</string>
+       </property>
        <column>
         <property name="text">
          <string>Full Name</string>
@@ -1190,12 +1129,12 @@ QPushButton:pressed {
        </column>
        <column>
         <property name="text">
-         <string>Address</string>
+         <string>Connections</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Job Designation</string>
+         <string>Country</string>
         </property>
        </column>
        <column>
@@ -1205,14 +1144,57 @@ QPushButton:pressed {
        </column>
        <column>
         <property name="text">
-         <string>Connections</string>
+         <string>Job Designation</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Country</string>
+         <string>Address</string>
         </property>
        </column>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>370</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+background-color:rgb(215, 215, 215);
+text: &quot;sadsad&quot;
+}
+QLineEdit:focus{
+ text:&quot;  &quot;;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Exported CSV file Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>280</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Time Taken:</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tab">
@@ -1271,6 +1253,9 @@ border:none</string>
 </string>
        </property>
        <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
         <string>Imported File</string>
        </property>
       </widget>
@@ -1321,7 +1306,10 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
-        <string>Nouman Tariq</string>
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>e.g Nouman Tariq</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_16">
@@ -1372,6 +1360,9 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
         <string>@Nouman0x45</string>
        </property>
       </widget>
@@ -1406,6 +1397,9 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
         <string>UET Lahore</string>
        </property>
       </widget>
@@ -1425,132 +1419,6 @@ QPushButton:pressed {
        <property name="text">
         <string>Connections</string>
        </property>
-      </widget>
-      <widget class="QSlider" name="horizontalSlider">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>330</y>
-         <width>131</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_20">
-       <property name="geometry">
-        <rect>
-         <x>320</x>
-         <y>330</y>
-         <width>21</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:white
-</string>
-       </property>
-       <property name="text">
-        <string>45</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="comboBox_5">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>270</y>
-         <width>161</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QComboBox {
-    border: 1px solid gray;
-    border-radius: 3px;
-    padding: 1px 18px 1px 3px;
-    min-width: 6em;
-}
-
-QComboBox:editable {
-    background: white;
-}
-
-QComboBox:!editable, QComboBox::drop-down:editable {
-     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
-                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
-}
-
-/* QComboBox gets the &quot;on&quot; state when the popup is open */
-QComboBox:!editable:on, QComboBox::drop-down:editable:on {
-    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
-                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
-}
-
-QComboBox:on { /* shift the text when the popup opens */
-    padding-top: 3px;
-    padding-left: 4px;
-}
-
-QComboBox::drop-down {
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-    width: 15px;
-
-    border-left-width: 1px;
-    border-left-color: darkgray;
-    border-left-style: solid; /* just a single line */
-    border-top-right-radius: 3px; /* same radius as the QComboBox */
-    border-bottom-right-radius: 3px;
-}
-
-</string>
-       </property>
-       <property name="editable">
-        <bool>true</bool>
-       </property>
-       <item>
-        <property name="text">
-         <string>Pakistan</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>India</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Australia</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Bangladesh</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Dubai</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Nigeria</string>
-        </property>
-       </item>
       </widget>
       <widget class="QLabel" name="label_21">
        <property name="geometry">
@@ -1607,14 +1475,20 @@ QPushButton:pressed {
         <rect>
          <x>350</x>
          <y>120</y>
-         <width>101</width>
+         <width>65</width>
          <height>21</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
-         <width>101</width>
+         <width>62</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>65</width>
+         <height>60</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -1622,7 +1496,7 @@ QPushButton:pressed {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
-    min-width: 6em;
+    min-width: 3em;
 }
 
 QComboBox:editable {
@@ -1650,7 +1524,7 @@ QComboBox:on { /* shift the text when the popup opens */
 QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    width: 15px;
+    width: 10px;
 
     border-left-width: 1px;
     border-left-color: darkgray;
@@ -1663,6 +1537,9 @@ QComboBox::drop-down {
        </property>
        <property name="editable">
         <bool>true</bool>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
        </property>
        <property name="iconSize">
         <size>
@@ -1678,11 +1555,6 @@ QComboBox::drop-down {
        <item>
         <property name="text">
          <string>OR</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>NOT</string>
         </property>
        </item>
       </widget>
@@ -1691,14 +1563,20 @@ QComboBox::drop-down {
         <rect>
          <x>350</x>
          <y>170</y>
-         <width>101</width>
-         <height>21</height>
+         <width>65</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
-         <width>101</width>
+         <width>62</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>65</width>
+         <height>65</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -1706,7 +1584,7 @@ QComboBox::drop-down {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
-    min-width: 6em;
+    min-width: 3em;
 }
 
 QComboBox:editable {
@@ -1734,7 +1612,7 @@ QComboBox:on { /* shift the text when the popup opens */
 QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    width: 15px;
+    width: 10px;
 
     border-left-width: 1px;
     border-left-color: darkgray;
@@ -1747,6 +1625,9 @@ QComboBox::drop-down {
        </property>
        <property name="editable">
         <bool>true</bool>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContents</enum>
        </property>
        <property name="iconSize">
         <size>
@@ -1762,11 +1643,6 @@ QComboBox::drop-down {
        <item>
         <property name="text">
          <string>OR</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>NOT</string>
         </property>
        </item>
       </widget>
@@ -1775,14 +1651,20 @@ QComboBox::drop-down {
         <rect>
          <x>350</x>
          <y>220</y>
-         <width>101</width>
+         <width>65</width>
          <height>21</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
-         <width>101</width>
+         <width>62</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>65</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -1790,7 +1672,7 @@ QComboBox::drop-down {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
-    min-width: 6em;
+    min-width: 3em;
 }
 
 QComboBox:editable {
@@ -1818,7 +1700,7 @@ QComboBox:on { /* shift the text when the popup opens */
 QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    width: 15px;
+    width: 10px;
 
     border-left-width: 1px;
     border-left-color: darkgray;
@@ -1846,11 +1728,6 @@ QComboBox::drop-down {
        <item>
         <property name="text">
          <string>OR</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>NOT</string>
         </property>
        </item>
       </widget>
@@ -1859,14 +1736,20 @@ QComboBox::drop-down {
         <rect>
          <x>350</x>
          <y>270</y>
-         <width>101</width>
+         <width>65</width>
          <height>21</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
-         <width>101</width>
+         <width>62</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>65</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -1874,7 +1757,7 @@ QComboBox::drop-down {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
-    min-width: 6em;
+    min-width: 3em;
 }
 
 QComboBox:editable {
@@ -1902,7 +1785,7 @@ QComboBox:on { /* shift the text when the popup opens */
 QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    width: 15px;
+    width: 10px;
 
     border-left-width: 1px;
     border-left-color: darkgray;
@@ -1932,66 +1815,25 @@ QComboBox::drop-down {
          <string>OR</string>
         </property>
        </item>
-       <item>
-        <property name="text">
-         <string>NOT</string>
-        </property>
-       </item>
       </widget>
-      <widget class="QTableWidget" name="tableWidget">
+      <widget class="QTableWidget" name="tableWidget_5">
        <property name="geometry">
         <rect>
          <x>460</x>
-         <y>50</y>
-         <width>571</width>
-         <height>371</height>
+         <y>60</y>
+         <width>601</width>
+         <height>351</height>
         </rect>
        </property>
-       <row>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>4</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>5</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>6</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>7</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>8</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>9</string>
-        </property>
-       </row>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+
+background-color:rgb(215, 215, 215);
+color:black;
+
+
+}</string>
+       </property>
        <column>
         <property name="text">
          <string>Full Name</string>
@@ -2004,7 +1846,17 @@ QComboBox::drop-down {
        </column>
        <column>
         <property name="text">
-         <string>Address</string>
+         <string>Connections</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Company</string>
         </property>
        </column>
        <column>
@@ -2014,7 +1866,194 @@ QComboBox::drop-down {
        </column>
        <column>
         <property name="text">
-         <string>Company</string>
+         <string>Address</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>120</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>170</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>220</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_4">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>270</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>320</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>From 0 to Any Number</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>270</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Select Country</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(16, 30, 41, 240);
+border:none</string>
+      </property>
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>170</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>61</y>
+         <width>601</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+
+background-color:rgb(215, 215, 215);
+color:black;
+
+
+}</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Full Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Username</string>
         </property>
        </column>
        <column>
@@ -2027,6 +2066,254 @@ QComboBox::drop-down {
          <string>Country</string>
         </property>
        </column>
+       <column>
+        <property name="text">
+         <string>Company</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Job Designation</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>61</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Import</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>31</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Table:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>100</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Type Search:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_11">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>130</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Any Entity</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>31</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Import CSV File:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_12">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(215, 215, 215)
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Imported File</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>360</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>350</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white
+</string>
+       </property>
+       <property name="text">
+        <string>Export Sorted Data</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>380</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+background-color:rgb(215, 215, 215);
+text: &quot;sadsad&quot;
+}
+QLineEdit:focus{
+ text:&quot;  &quot;;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Exported CSV file Name</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>230</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   background-color:rgb(17, 30, 42);
+	border: none;
+   color: white;
+    border-radius:10px;
+}
+QPushButton:hover {
+	background-color: rgba(0,125,236,255);
+}
+QPushButton:pressed {	
+	background-color: white;
+   color : black
+}</string>
+       </property>
+       <property name="text">
+        <string>Advanced Search</string>
+       </property>
       </widget>
      </widget>
     </widget>

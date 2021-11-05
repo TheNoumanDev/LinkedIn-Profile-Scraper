@@ -146,12 +146,6 @@ class Ui_MainWindow(object):
 "")
         self.comboBox.setEditable(True)
         self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
         self.label_3 = QtWidgets.QLabel(self.tab1)
         self.label_3.setGeometry(QtCore.QRect(190, 50, 71, 16))
         self.label_3.setStyleSheet("color:white\n"
@@ -166,6 +160,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setGeometry(QtCore.QRect(190, 130, 191, 20))
         self.lineEdit.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit.setText("")
         self.lineEdit.setObjectName("lineEdit")
         self.pushButton_6 = QtWidgets.QPushButton(self.tab1)
         self.pushButton_6.setGeometry(QtCore.QRect(280, 180, 101, 41))
@@ -225,7 +220,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_8.setObjectName("pushButton_8")
         self.pushButton_9 = QtWidgets.QPushButton(self.tab1)
-        self.pushButton_9.setGeometry(QtCore.QRect(280, 330, 101, 41))
+        self.pushButton_9.setGeometry(QtCore.QRect(280, 370, 101, 41))
         font = QtGui.QFont()
         font.setPointSize(16)
         self.pushButton_9.setFont(font)
@@ -247,13 +242,15 @@ class Ui_MainWindow(object):
         self.progressBar.setGeometry(QtCore.QRect(420, 390, 611, 23))
         self.progressBar.setStyleSheet("QProgressBar {\n"
 "    border: 2px solid grey;\n"
-"text-align: center;\n"
+"    text-align: center;\n"
 "    border-radius: 5px;\n"
+"    color:white\n"
 "}\n"
 "\n"
 "QProgressBar::chunk {\n"
 "    background-color: #05B8CC;\n"
 "    width: 20px;\n"
+"   color:white\n"
 "}")
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
@@ -271,27 +268,16 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName("label_6")
         self.tableWidget_3 = QtWidgets.QTableWidget(self.tab1)
         self.tableWidget_3.setGeometry(QtCore.QRect(420, 30, 601, 351))
+        self.tableWidget_3.setStyleSheet("QTableWidget {\n"
+"\n"
+"background-color:rgb(215, 215, 215);\n"
+"color:black;\n"
+"\n"
+"\n"
+"}")
         self.tableWidget_3.setObjectName("tableWidget_3")
         self.tableWidget_3.setColumnCount(7)
-        self.tableWidget_3.setRowCount(9)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(7, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_3.setVerticalHeaderItem(8, item)
+        self.tableWidget_3.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_3.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
@@ -306,6 +292,23 @@ class Ui_MainWindow(object):
         self.tableWidget_3.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_3.setHorizontalHeaderItem(6, item)
+        self.lineEdit_7 = QtWidgets.QLineEdit(self.tab1)
+        self.lineEdit_7.setGeometry(QtCore.QRect(190, 340, 191, 20))
+        self.lineEdit_7.setStyleSheet("QLineEdit{\n"
+"background-color:rgb(215, 215, 215);\n"
+"text: \"sadsad\"\n"
+"}\n"
+"QLineEdit:focus{\n"
+" text:\"  \";\n"
+"}\n"
+"")
+        self.lineEdit_7.setText("")
+        self.lineEdit_7.setObjectName("lineEdit_7")
+        self.label_22 = QtWidgets.QLabel(self.tab1)
+        self.label_22.setGeometry(QtCore.QRect(190, 320, 81, 16))
+        self.label_22.setStyleSheet("color:white\n"
+"")
+        self.label_22.setObjectName("label_22")
         self.tabWidget.addTab(self.tab1, "")
         self.tab2 = QtWidgets.QWidget()
         self.tab2.setStyleSheet("background-color:rgba(16, 30, 41, 240);\n"
@@ -339,6 +342,7 @@ class Ui_MainWindow(object):
         self.lineEdit_2.setGeometry(QtCore.QRect(190, 69, 161, 21))
         self.lineEdit_2.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit_2.setText("")
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.comboBox_2 = QtWidgets.QComboBox(self.tab2)
         self.comboBox_2.setGeometry(QtCore.QRect(190, 190, 191, 22))
@@ -446,8 +450,6 @@ class Ui_MainWindow(object):
         self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
         self.label_9 = QtWidgets.QLabel(self.tab2)
         self.label_9.setGeometry(QtCore.QRect(190, 170, 81, 16))
         self.label_9.setStyleSheet("color:white\n"
@@ -531,13 +533,13 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_11.setObjectName("pushButton_11")
         self.label_11 = QtWidgets.QLabel(self.tab2)
-        self.label_11.setGeometry(QtCore.QRect(190, 290, 71, 16))
+        self.label_11.setGeometry(QtCore.QRect(250, 300, 71, 16))
         self.label_11.setStyleSheet("color:white\n"
 "")
         self.label_11.setAlignment(QtCore.Qt.AlignCenter)
         self.label_11.setObjectName("label_11")
         self.pushButton_12 = QtWidgets.QPushButton(self.tab2)
-        self.pushButton_12.setGeometry(QtCore.QRect(330, 360, 101, 41))
+        self.pushButton_12.setGeometry(QtCore.QRect(340, 350, 101, 41))
         font = QtGui.QFont()
         font.setPointSize(16)
         self.pushButton_12.setFont(font)
@@ -565,43 +567,49 @@ class Ui_MainWindow(object):
         self.label_13.setStyleSheet("color:white\n"
 "")
         self.label_13.setObjectName("label_13")
-        self.tableWidget_2 = QtWidgets.QTableWidget(self.tab2)
-        self.tableWidget_2.setGeometry(QtCore.QRect(460, 60, 571, 371))
-        self.tableWidget_2.setObjectName("tableWidget_2")
-        self.tableWidget_2.setColumnCount(7)
-        self.tableWidget_2.setRowCount(9)
+        self.tableWidget_4 = QtWidgets.QTableWidget(self.tab2)
+        self.tableWidget_4.setGeometry(QtCore.QRect(460, 60, 601, 351))
+        self.tableWidget_4.setStyleSheet("QTableWidget {\n"
+"\n"
+"background-color:rgb(215, 215, 215);\n"
+"color:black;\n"
+"\n"
+"\n"
+"}")
+        self.tableWidget_4.setObjectName("tableWidget_4")
+        self.tableWidget_4.setColumnCount(7)
+        self.tableWidget_4.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(0, item)
+        self.tableWidget_4.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(1, item)
+        self.tableWidget_4.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(2, item)
+        self.tableWidget_4.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(3, item)
+        self.tableWidget_4.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(4, item)
+        self.tableWidget_4.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(5, item)
+        self.tableWidget_4.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(7, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(8, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(6, item)
+        self.tableWidget_4.setHorizontalHeaderItem(6, item)
+        self.lineEdit_8 = QtWidgets.QLineEdit(self.tab2)
+        self.lineEdit_8.setGeometry(QtCore.QRect(190, 370, 141, 20))
+        self.lineEdit_8.setStyleSheet("QLineEdit{\n"
+"background-color:rgb(215, 215, 215);\n"
+"text: \"sadsad\"\n"
+"}\n"
+"QLineEdit:focus{\n"
+" text:\"  \";\n"
+"}\n"
+"")
+        self.lineEdit_8.setText("")
+        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.label_23 = QtWidgets.QLabel(self.tab2)
+        self.label_23.setGeometry(QtCore.QRect(190, 280, 61, 16))
+        self.label_23.setStyleSheet("color:white\n"
+"")
+        self.label_23.setObjectName("label_23")
         self.tabWidget.addTab(self.tab2, "")
         self.tab = QtWidgets.QWidget()
         self.tab.setStyleSheet("background-color:rgba(16, 30, 41, 240);\n"
@@ -621,6 +629,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setGeometry(QtCore.QRect(180, 59, 161, 21))
         self.lineEdit_3.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit_3.setText("")
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.pushButton_13 = QtWidgets.QPushButton(self.tab)
         self.pushButton_13.setGeometry(QtCore.QRect(350, 60, 81, 21))
@@ -645,6 +654,7 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setGeometry(QtCore.QRect(180, 120, 161, 20))
         self.lineEdit_4.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit_4.setText("")
         self.lineEdit_4.setObjectName("lineEdit_4")
         self.label_16 = QtWidgets.QLabel(self.tab)
         self.label_16.setGeometry(QtCore.QRect(180, 100, 61, 16))
@@ -660,6 +670,7 @@ class Ui_MainWindow(object):
         self.lineEdit_5.setGeometry(QtCore.QRect(180, 170, 161, 20))
         self.lineEdit_5.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit_5.setText("")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.label_18 = QtWidgets.QLabel(self.tab)
         self.label_18.setGeometry(QtCore.QRect(180, 200, 61, 16))
@@ -670,79 +681,13 @@ class Ui_MainWindow(object):
         self.lineEdit_6.setGeometry(QtCore.QRect(180, 220, 161, 20))
         self.lineEdit_6.setStyleSheet("background-color:rgb(215, 215, 215)\n"
 "")
+        self.lineEdit_6.setText("")
         self.lineEdit_6.setObjectName("lineEdit_6")
         self.label_19 = QtWidgets.QLabel(self.tab)
         self.label_19.setGeometry(QtCore.QRect(180, 300, 61, 16))
         self.label_19.setStyleSheet("color:white\n"
 "")
         self.label_19.setObjectName("label_19")
-        self.horizontalSlider = QtWidgets.QSlider(self.tab)
-        self.horizontalSlider.setGeometry(QtCore.QRect(180, 330, 131, 22))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.horizontalSlider.sizePolicy().hasHeightForWidth())
-        self.horizontalSlider.setSizePolicy(sizePolicy)
-        self.horizontalSlider.setStyleSheet("")
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.label_20 = QtWidgets.QLabel(self.tab)
-        self.label_20.setGeometry(QtCore.QRect(320, 330, 21, 16))
-        self.label_20.setStyleSheet("color:white\n"
-"")
-        self.label_20.setObjectName("label_20")
-        self.comboBox_5 = QtWidgets.QComboBox(self.tab)
-        self.comboBox_5.setGeometry(QtCore.QRect(180, 270, 161, 22))
-        self.comboBox_5.setStyleSheet("QComboBox {\n"
-"    border: 1px solid gray;\n"
-"    border-radius: 3px;\n"
-"    padding: 1px 18px 1px 3px;\n"
-"    min-width: 6em;\n"
-"}\n"
-"\n"
-"QComboBox:editable {\n"
-"    background: white;\n"
-"}\n"
-"\n"
-"QComboBox:!editable, QComboBox::drop-down:editable {\n"
-"     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,\n"
-"                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);\n"
-"}\n"
-"\n"
-"/* QComboBox gets the \"on\" state when the popup is open */\n"
-"QComboBox:!editable:on, QComboBox::drop-down:editable:on {\n"
-"    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,\n"
-"                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);\n"
-"}\n"
-"\n"
-"QComboBox:on { /* shift the text when the popup opens */\n"
-"    padding-top: 3px;\n"
-"    padding-left: 4px;\n"
-"}\n"
-"\n"
-"QComboBox::drop-down {\n"
-"    subcontrol-origin: padding;\n"
-"    subcontrol-position: top right;\n"
-"    width: 15px;\n"
-"\n"
-"    border-left-width: 1px;\n"
-"    border-left-color: darkgray;\n"
-"    border-left-style: solid; /* just a single line */\n"
-"    border-top-right-radius: 3px; /* same radius as the QComboBox */\n"
-"    border-bottom-right-radius: 3px;\n"
-"}\n"
-"\n"
-"")
-        self.comboBox_5.setEditable(True)
-        self.comboBox_5.setObjectName("comboBox_5")
-        self.comboBox_5.addItem("")
-        self.comboBox_5.addItem("")
-        self.comboBox_5.addItem("")
-        self.comboBox_5.addItem("")
-        self.comboBox_5.addItem("")
-        self.comboBox_5.addItem("")
         self.label_21 = QtWidgets.QLabel(self.tab)
         self.label_21.setGeometry(QtCore.QRect(180, 250, 71, 16))
         self.label_21.setStyleSheet("color:white\n"
@@ -768,13 +713,14 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_14.setObjectName("pushButton_14")
         self.comboBox_6 = QtWidgets.QComboBox(self.tab)
-        self.comboBox_6.setGeometry(QtCore.QRect(350, 120, 101, 21))
-        self.comboBox_6.setMinimumSize(QtCore.QSize(101, 0))
+        self.comboBox_6.setGeometry(QtCore.QRect(350, 120, 65, 21))
+        self.comboBox_6.setMinimumSize(QtCore.QSize(62, 0))
+        self.comboBox_6.setMaximumSize(QtCore.QSize(65, 60))
         self.comboBox_6.setStyleSheet("QComboBox {\n"
 "    border: 1px solid gray;\n"
 "    border-radius: 3px;\n"
 "    padding: 1px 18px 1px 3px;\n"
-"    min-width: 6em;\n"
+"    min-width: 3em;\n"
 "}\n"
 "\n"
 "QComboBox:editable {\n"
@@ -802,7 +748,7 @@ class Ui_MainWindow(object):
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
-"    width: 15px;\n"
+"    width: 10px;\n"
 "\n"
 "    border-left-width: 1px;\n"
 "    border-left-color: darkgray;\n"
@@ -813,19 +759,20 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.comboBox_6.setEditable(True)
+        self.comboBox_6.setSizeAdjustPolicy(QtWidgets.QComboBox.AdjustToMinimumContentsLength)
         self.comboBox_6.setIconSize(QtCore.QSize(15, 15))
         self.comboBox_6.setObjectName("comboBox_6")
         self.comboBox_6.addItem("")
         self.comboBox_6.addItem("")
-        self.comboBox_6.addItem("")
         self.comboBox_7 = QtWidgets.QComboBox(self.tab)
-        self.comboBox_7.setGeometry(QtCore.QRect(350, 170, 101, 21))
-        self.comboBox_7.setMinimumSize(QtCore.QSize(101, 0))
+        self.comboBox_7.setGeometry(QtCore.QRect(350, 170, 65, 20))
+        self.comboBox_7.setMinimumSize(QtCore.QSize(62, 0))
+        self.comboBox_7.setMaximumSize(QtCore.QSize(65, 65))
         self.comboBox_7.setStyleSheet("QComboBox {\n"
 "    border: 1px solid gray;\n"
 "    border-radius: 3px;\n"
 "    padding: 1px 18px 1px 3px;\n"
-"    min-width: 6em;\n"
+"    min-width: 3em;\n"
 "}\n"
 "\n"
 "QComboBox:editable {\n"
@@ -853,7 +800,7 @@ class Ui_MainWindow(object):
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
-"    width: 15px;\n"
+"    width: 10px;\n"
 "\n"
 "    border-left-width: 1px;\n"
 "    border-left-color: darkgray;\n"
@@ -864,19 +811,20 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.comboBox_7.setEditable(True)
+        self.comboBox_7.setSizeAdjustPolicy(QtWidgets.QComboBox.AdjustToContents)
         self.comboBox_7.setIconSize(QtCore.QSize(15, 15))
         self.comboBox_7.setObjectName("comboBox_7")
         self.comboBox_7.addItem("")
         self.comboBox_7.addItem("")
-        self.comboBox_7.addItem("")
         self.comboBox_8 = QtWidgets.QComboBox(self.tab)
-        self.comboBox_8.setGeometry(QtCore.QRect(350, 220, 101, 21))
-        self.comboBox_8.setMinimumSize(QtCore.QSize(101, 0))
+        self.comboBox_8.setGeometry(QtCore.QRect(350, 220, 65, 21))
+        self.comboBox_8.setMinimumSize(QtCore.QSize(62, 0))
+        self.comboBox_8.setMaximumSize(QtCore.QSize(65, 16777215))
         self.comboBox_8.setStyleSheet("QComboBox {\n"
 "    border: 1px solid gray;\n"
 "    border-radius: 3px;\n"
 "    padding: 1px 18px 1px 3px;\n"
-"    min-width: 6em;\n"
+"    min-width: 3em;\n"
 "}\n"
 "\n"
 "QComboBox:editable {\n"
@@ -904,7 +852,7 @@ class Ui_MainWindow(object):
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
-"    width: 15px;\n"
+"    width: 10px;\n"
 "\n"
 "    border-left-width: 1px;\n"
 "    border-left-color: darkgray;\n"
@@ -919,15 +867,15 @@ class Ui_MainWindow(object):
         self.comboBox_8.setObjectName("comboBox_8")
         self.comboBox_8.addItem("")
         self.comboBox_8.addItem("")
-        self.comboBox_8.addItem("")
         self.comboBox_9 = QtWidgets.QComboBox(self.tab)
-        self.comboBox_9.setGeometry(QtCore.QRect(350, 270, 101, 21))
-        self.comboBox_9.setMinimumSize(QtCore.QSize(101, 0))
+        self.comboBox_9.setGeometry(QtCore.QRect(350, 270, 65, 21))
+        self.comboBox_9.setMinimumSize(QtCore.QSize(62, 0))
+        self.comboBox_9.setMaximumSize(QtCore.QSize(65, 16777215))
         self.comboBox_9.setStyleSheet("QComboBox {\n"
 "    border: 1px solid gray;\n"
 "    border-radius: 3px;\n"
 "    padding: 1px 18px 1px 3px;\n"
-"    min-width: 6em;\n"
+"    min-width: 3em;\n"
 "}\n"
 "\n"
 "QComboBox:editable {\n"
@@ -955,7 +903,7 @@ class Ui_MainWindow(object):
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
-"    width: 15px;\n"
+"    width: 10px;\n"
 "\n"
 "    border-left-width: 1px;\n"
 "    border-left-color: darkgray;\n"
@@ -970,45 +918,216 @@ class Ui_MainWindow(object):
         self.comboBox_9.setObjectName("comboBox_9")
         self.comboBox_9.addItem("")
         self.comboBox_9.addItem("")
-        self.comboBox_9.addItem("")
-        self.tableWidget = QtWidgets.QTableWidget(self.tab)
-        self.tableWidget.setGeometry(QtCore.QRect(460, 50, 571, 371))
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(7)
-        self.tableWidget.setRowCount(9)
+        self.tableWidget_5 = QtWidgets.QTableWidget(self.tab)
+        self.tableWidget_5.setGeometry(QtCore.QRect(460, 60, 601, 351))
+        self.tableWidget_5.setStyleSheet("QTableWidget {\n"
+"\n"
+"background-color:rgb(215, 215, 215);\n"
+"color:black;\n"
+"\n"
+"\n"
+"}")
+        self.tableWidget_5.setObjectName("tableWidget_5")
+        self.tableWidget_5.setColumnCount(7)
+        self.tableWidget_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.tableWidget_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, item)
+        self.tableWidget_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, item)
+        self.tableWidget_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(3, item)
+        self.tableWidget_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(4, item)
+        self.tableWidget_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(5, item)
+        self.tableWidget_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(7, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(8, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(6, item)
+        self.tableWidget_5.setHorizontalHeaderItem(6, item)
+        self.checkBox = QtWidgets.QCheckBox(self.tab)
+        self.checkBox.setGeometry(QtCore.QRect(430, 120, 21, 21))
+        self.checkBox.setMinimumSize(QtCore.QSize(0, 0))
+        self.checkBox.setText("")
+        self.checkBox.setObjectName("checkBox")
+        self.checkBox_2 = QtWidgets.QCheckBox(self.tab)
+        self.checkBox_2.setGeometry(QtCore.QRect(430, 170, 21, 21))
+        self.checkBox_2.setMinimumSize(QtCore.QSize(0, 0))
+        self.checkBox_2.setText("")
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.checkBox_3 = QtWidgets.QCheckBox(self.tab)
+        self.checkBox_3.setGeometry(QtCore.QRect(430, 220, 21, 21))
+        self.checkBox_3.setMinimumSize(QtCore.QSize(0, 0))
+        self.checkBox_3.setText("")
+        self.checkBox_3.setObjectName("checkBox_3")
+        self.checkBox_4 = QtWidgets.QCheckBox(self.tab)
+        self.checkBox_4.setGeometry(QtCore.QRect(430, 270, 21, 21))
+        self.checkBox_4.setMinimumSize(QtCore.QSize(0, 0))
+        self.checkBox_4.setText("")
+        self.checkBox_4.setObjectName("checkBox_4")
+        self.lineEdit_9 = QtWidgets.QLineEdit(self.tab)
+        self.lineEdit_9.setGeometry(QtCore.QRect(180, 320, 161, 20))
+        self.lineEdit_9.setStyleSheet("background-color:rgb(215, 215, 215)\n"
+"")
+        self.lineEdit_9.setText("")
+        self.lineEdit_9.setObjectName("lineEdit_9")
+        self.lineEdit_10 = QtWidgets.QLineEdit(self.tab)
+        self.lineEdit_10.setGeometry(QtCore.QRect(180, 270, 161, 20))
+        self.lineEdit_10.setStyleSheet("background-color:rgb(215, 215, 215)\n"
+"")
+        self.lineEdit_10.setText("")
+        self.lineEdit_10.setObjectName("lineEdit_10")
         self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setStyleSheet("background-color:rgba(16, 30, 41, 240);\n"
+"border:none")
+        self.tab_2.setObjectName("tab_2")
+        self.pushButton_15 = QtWidgets.QPushButton(self.tab_2)
+        self.pushButton_15.setGeometry(QtCore.QRect(320, 170, 111, 41))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.pushButton_15.setFont(font)
+        self.pushButton_15.setStyleSheet("QPushButton {\n"
+"   background-color:rgb(17, 30, 42);\n"
+"    border: none;\n"
+"   color: white;\n"
+"    border-radius:10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(0,125,236,255);\n"
+"}\n"
+"QPushButton:pressed {    \n"
+"    background-color: white;\n"
+"   color : black\n"
+"}")
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.tableWidget_6 = QtWidgets.QTableWidget(self.tab_2)
+        self.tableWidget_6.setGeometry(QtCore.QRect(450, 61, 601, 351))
+        self.tableWidget_6.setStyleSheet("QTableWidget {\n"
+"\n"
+"background-color:rgb(215, 215, 215);\n"
+"color:black;\n"
+"\n"
+"\n"
+"}")
+        self.tableWidget_6.setObjectName("tableWidget_6")
+        self.tableWidget_6.setColumnCount(7)
+        self.tableWidget_6.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(6, item)
+        self.pushButton_16 = QtWidgets.QPushButton(self.tab_2)
+        self.pushButton_16.setGeometry(QtCore.QRect(340, 61, 81, 21))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.pushButton_16.setFont(font)
+        self.pushButton_16.setStyleSheet("QPushButton {\n"
+"   background-color:rgb(17, 30, 42);\n"
+"    border: none;\n"
+"   color: white;\n"
+"    border-radius:10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(0,125,236,255);\n"
+"}\n"
+"QPushButton:pressed {    \n"
+"    background-color: white;\n"
+"   color : black\n"
+"}")
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.label_20 = QtWidgets.QLabel(self.tab_2)
+        self.label_20.setGeometry(QtCore.QRect(450, 31, 41, 16))
+        self.label_20.setStyleSheet("color:white\n"
+"")
+        self.label_20.setObjectName("label_20")
+        self.label_24 = QtWidgets.QLabel(self.tab_2)
+        self.label_24.setGeometry(QtCore.QRect(170, 100, 71, 16))
+        self.label_24.setStyleSheet("color:white\n"
+"")
+        self.label_24.setObjectName("label_24")
+        self.lineEdit_11 = QtWidgets.QLineEdit(self.tab_2)
+        self.lineEdit_11.setGeometry(QtCore.QRect(170, 130, 161, 20))
+        self.lineEdit_11.setStyleSheet("background-color:rgb(215, 215, 215)\n"
+"")
+        self.lineEdit_11.setText("")
+        self.lineEdit_11.setObjectName("lineEdit_11")
+        self.label_25 = QtWidgets.QLabel(self.tab_2)
+        self.label_25.setGeometry(QtCore.QRect(170, 31, 81, 16))
+        self.label_25.setStyleSheet("color:white\n"
+"")
+        self.label_25.setObjectName("label_25")
+        self.lineEdit_12 = QtWidgets.QLineEdit(self.tab_2)
+        self.lineEdit_12.setGeometry(QtCore.QRect(170, 60, 161, 21))
+        self.lineEdit_12.setStyleSheet("background-color:rgb(215, 215, 215)\n"
+"")
+        self.lineEdit_12.setText("")
+        self.lineEdit_12.setObjectName("lineEdit_12")
+        self.pushButton_17 = QtWidgets.QPushButton(self.tab_2)
+        self.pushButton_17.setGeometry(QtCore.QRect(330, 360, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.pushButton_17.setFont(font)
+        self.pushButton_17.setStyleSheet("QPushButton {\n"
+"   background-color:rgb(17, 30, 42);\n"
+"    border: none;\n"
+"   color: white;\n"
+"    border-radius:10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(0,125,236,255);\n"
+"}\n"
+"QPushButton:pressed {    \n"
+"    background-color: white;\n"
+"   color : black\n"
+"}")
+        self.pushButton_17.setObjectName("pushButton_17")
+        self.label_26 = QtWidgets.QLabel(self.tab_2)
+        self.label_26.setGeometry(QtCore.QRect(170, 350, 101, 16))
+        self.label_26.setStyleSheet("color:white\n"
+"")
+        self.label_26.setObjectName("label_26")
+        self.lineEdit_13 = QtWidgets.QLineEdit(self.tab_2)
+        self.lineEdit_13.setGeometry(QtCore.QRect(170, 380, 141, 20))
+        self.lineEdit_13.setStyleSheet("QLineEdit{\n"
+"background-color:rgb(215, 215, 215);\n"
+"text: \"sadsad\"\n"
+"}\n"
+"QLineEdit:focus{\n"
+" text:\"  \";\n"
+"}\n"
+"")
+        self.lineEdit_13.setText("")
+        self.lineEdit_13.setObjectName("lineEdit_13")
+        self.pushButton_18 = QtWidgets.QPushButton(self.tab_2)
+        self.pushButton_18.setGeometry(QtCore.QRect(250, 230, 181, 41))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.pushButton_18.setFont(font)
+        self.pushButton_18.setStyleSheet("QPushButton {\n"
+"   background-color:rgb(17, 30, 42);\n"
+"    border: none;\n"
+"   color: white;\n"
+"    border-radius:10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(0,125,236,255);\n"
+"}\n"
+"QPushButton:pressed {    \n"
+"    background-color: white;\n"
+"   color : black\n"
+"}")
+        self.pushButton_18.setObjectName("pushButton_18")
+        self.tabWidget.addTab(self.tab_2, "")
         self.widget = QtWidgets.QWidget(self.frame_2)
         self.widget.setGeometry(QtCore.QRect(0, 0, 891, 101))
         self.widget.setObjectName("widget")
@@ -1089,7 +1208,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -1098,182 +1217,151 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "X"))
         self.pushButton_2.setText(_translate("MainWindow", "-"))
         self.label.setText(_translate("MainWindow", "<strong>Scraping</strong> Window"))
-        self.comboBox.setItemText(0, _translate("MainWindow", "Pakistan"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "India"))
-        self.comboBox.setItemText(2, _translate("MainWindow", "Australia"))
-        self.comboBox.setItemText(3, _translate("MainWindow", "Bangladesh"))
-        self.comboBox.setItemText(4, _translate("MainWindow", "Dubai"))
-        self.comboBox.setItemText(5, _translate("MainWindow", "Nigeria"))
         self.label_3.setText(_translate("MainWindow", "Select Contry"))
         self.label_4.setText(_translate("MainWindow", "Profiles Amount"))
-        self.lineEdit.setText(_translate("MainWindow", "Profile Amount"))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Profile Amount"))
         self.pushButton_6.setText(_translate("MainWindow", "Start"))
         self.pushButton_7.setText(_translate("MainWindow", "Pause"))
         self.pushButton_8.setText(_translate("MainWindow", "Stop"))
         self.pushButton_9.setText(_translate("MainWindow", "Export"))
         self.label_5.setText(_translate("MainWindow", "5692 Done"))
         self.label_6.setText(_translate("MainWindow", "6m 53s"))
-        item = self.tableWidget_3.verticalHeaderItem(0)
-        item.setText(_translate("MainWindow", "1"))
-        item = self.tableWidget_3.verticalHeaderItem(1)
-        item.setText(_translate("MainWindow", "2"))
-        item = self.tableWidget_3.verticalHeaderItem(2)
-        item.setText(_translate("MainWindow", "3"))
-        item = self.tableWidget_3.verticalHeaderItem(3)
-        item.setText(_translate("MainWindow", "4"))
-        item = self.tableWidget_3.verticalHeaderItem(4)
-        item.setText(_translate("MainWindow", "5"))
-        item = self.tableWidget_3.verticalHeaderItem(5)
-        item.setText(_translate("MainWindow", "6"))
-        item = self.tableWidget_3.verticalHeaderItem(6)
-        item.setText(_translate("MainWindow", "7"))
-        item = self.tableWidget_3.verticalHeaderItem(7)
-        item.setText(_translate("MainWindow", "8"))
-        item = self.tableWidget_3.verticalHeaderItem(8)
-        item.setText(_translate("MainWindow", "9"))
         item = self.tableWidget_3.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Full Name"))
         item = self.tableWidget_3.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "Username"))
         item = self.tableWidget_3.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "Address"))
+        item.setText(_translate("MainWindow", "Connections"))
         item = self.tableWidget_3.horizontalHeaderItem(3)
-        item.setText(_translate("MainWindow", "Job Designation"))
+        item.setText(_translate("MainWindow", "Country"))
         item = self.tableWidget_3.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "Company"))
         item = self.tableWidget_3.horizontalHeaderItem(5)
-        item.setText(_translate("MainWindow", "Connections"))
+        item.setText(_translate("MainWindow", "Job Designation"))
         item = self.tableWidget_3.horizontalHeaderItem(6)
-        item.setText(_translate("MainWindow", "Country"))
+        item.setText(_translate("MainWindow", "Address"))
+        self.lineEdit_7.setPlaceholderText(_translate("MainWindow", "Enter Exported CSV file Name"))
+        self.label_22.setText(_translate("MainWindow", "Enter Name"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab1), _translate("MainWindow", "Tab 1"))
         self.label_7.setText(_translate("MainWindow", "Import CSV File:"))
         self.pushButton_10.setText(_translate("MainWindow", "Import"))
-        self.lineEdit_2.setText(_translate("MainWindow", "Imported File"))
+        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Imported File"))
         self.comboBox_2.setItemText(0, _translate("MainWindow", "Insertion"))
         self.comboBox_2.setItemText(1, _translate("MainWindow", "Quick"))
         self.comboBox_2.setItemText(2, _translate("MainWindow", "Bubble"))
         self.comboBox_2.setItemText(3, _translate("MainWindow", "Selection"))
         self.comboBox_2.setItemText(4, _translate("MainWindow", "Merge"))
-        self.comboBox_2.setItemText(5, _translate("MainWindow", "ClockTail"))
-        self.comboBox_2.setItemText(6, _translate("MainWindow", "Counting"))
-        self.comboBox_2.setItemText(7, _translate("MainWindow", "Radix"))
-        self.comboBox_2.setItemText(8, _translate("MainWindow", "Bucket"))
+        self.comboBox_2.setItemText(5, _translate("MainWindow", "TimSort"))
+        self.comboBox_2.setItemText(6, _translate("MainWindow", "Shell"))
+        self.comboBox_2.setItemText(7, _translate("MainWindow", "CocktailSort"))
+        self.comboBox_2.setItemText(8, _translate("MainWindow", "CombSort"))
         self.comboBox_3.setItemText(0, _translate("MainWindow", "Full Name"))
         self.comboBox_3.setItemText(1, _translate("MainWindow", "Username"))
-        self.comboBox_3.setItemText(2, _translate("MainWindow", "Job Designer"))
-        self.comboBox_3.setItemText(3, _translate("MainWindow", "Company"))
-        self.comboBox_3.setItemText(4, _translate("MainWindow", "No. of connections"))
-        self.comboBox_3.setItemText(5, _translate("MainWindow", "Address"))
-        self.comboBox_3.setItemText(6, _translate("MainWindow", "Country"))
+        self.comboBox_3.setItemText(2, _translate("MainWindow", "Company"))
+        self.comboBox_3.setItemText(3, _translate("MainWindow", "No. of connections"))
+        self.comboBox_3.setItemText(4, _translate("MainWindow", "Country"))
         self.label_9.setText(_translate("MainWindow", "Select Algorithm"))
         self.label_8.setText(_translate("MainWindow", "Select Column"))
         self.label_10.setText(_translate("MainWindow", "Select Order"))
         self.comboBox_4.setItemText(0, _translate("MainWindow", "Ascending"))
         self.comboBox_4.setItemText(1, _translate("MainWindow", "Decending"))
         self.pushButton_11.setText(_translate("MainWindow", "Sort"))
-        self.label_11.setText(_translate("MainWindow", "6m 53s"))
+        self.label_11.setText(_translate("MainWindow", "0.2 Seconds"))
         self.pushButton_12.setText(_translate("MainWindow", "Export"))
         self.label_12.setText(_translate("MainWindow", "Export Sorted Data"))
         self.label_13.setText(_translate("MainWindow", "Table:"))
-        item = self.tableWidget_2.verticalHeaderItem(0)
-        item.setText(_translate("MainWindow", "1"))
-        item = self.tableWidget_2.verticalHeaderItem(1)
-        item.setText(_translate("MainWindow", "2"))
-        item = self.tableWidget_2.verticalHeaderItem(2)
-        item.setText(_translate("MainWindow", "3"))
-        item = self.tableWidget_2.verticalHeaderItem(3)
-        item.setText(_translate("MainWindow", "4"))
-        item = self.tableWidget_2.verticalHeaderItem(4)
-        item.setText(_translate("MainWindow", "5"))
-        item = self.tableWidget_2.verticalHeaderItem(5)
-        item.setText(_translate("MainWindow", "6"))
-        item = self.tableWidget_2.verticalHeaderItem(6)
-        item.setText(_translate("MainWindow", "7"))
-        item = self.tableWidget_2.verticalHeaderItem(7)
-        item.setText(_translate("MainWindow", "8"))
-        item = self.tableWidget_2.verticalHeaderItem(8)
-        item.setText(_translate("MainWindow", "9"))
-        item = self.tableWidget_2.horizontalHeaderItem(0)
+        item = self.tableWidget_4.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Full Name"))
-        item = self.tableWidget_2.horizontalHeaderItem(1)
+        item = self.tableWidget_4.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "Username"))
-        item = self.tableWidget_2.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "Address"))
-        item = self.tableWidget_2.horizontalHeaderItem(3)
-        item.setText(_translate("MainWindow", "Job Designation"))
-        item = self.tableWidget_2.horizontalHeaderItem(4)
-        item.setText(_translate("MainWindow", "Company"))
-        item = self.tableWidget_2.horizontalHeaderItem(5)
+        item = self.tableWidget_4.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "Connections"))
-        item = self.tableWidget_2.horizontalHeaderItem(6)
+        item = self.tableWidget_4.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Country"))
+        item = self.tableWidget_4.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "Company"))
+        item = self.tableWidget_4.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "Job Designation"))
+        item = self.tableWidget_4.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "Address"))
+        self.lineEdit_8.setPlaceholderText(_translate("MainWindow", "Enter Exported CSV file Name"))
+        self.label_23.setText(_translate("MainWindow", "Time Taken:"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab2), _translate("MainWindow", "Tab 2"))
         self.label_14.setText(_translate("MainWindow", "Table:"))
         self.label_15.setText(_translate("MainWindow", "Import CSV File:"))
-        self.lineEdit_3.setText(_translate("MainWindow", "Imported File"))
+        self.lineEdit_3.setPlaceholderText(_translate("MainWindow", "Imported File"))
         self.pushButton_13.setText(_translate("MainWindow", "Import"))
-        self.lineEdit_4.setText(_translate("MainWindow", "Nouman Tariq"))
+        self.lineEdit_4.setPlaceholderText(_translate("MainWindow", "e.g Nouman Tariq"))
         self.label_16.setText(_translate("MainWindow", "Type Name:"))
         self.label_17.setText(_translate("MainWindow", "Username"))
-        self.lineEdit_5.setText(_translate("MainWindow", "@Nouman0x45"))
+        self.lineEdit_5.setPlaceholderText(_translate("MainWindow", "@Nouman0x45"))
         self.label_18.setText(_translate("MainWindow", "Company"))
-        self.lineEdit_6.setText(_translate("MainWindow", "UET Lahore"))
+        self.lineEdit_6.setPlaceholderText(_translate("MainWindow", "UET Lahore"))
         self.label_19.setText(_translate("MainWindow", "Connections"))
-        self.label_20.setText(_translate("MainWindow", "45"))
-        self.comboBox_5.setItemText(0, _translate("MainWindow", "Pakistan"))
-        self.comboBox_5.setItemText(1, _translate("MainWindow", "India"))
-        self.comboBox_5.setItemText(2, _translate("MainWindow", "Australia"))
-        self.comboBox_5.setItemText(3, _translate("MainWindow", "Bangladesh"))
-        self.comboBox_5.setItemText(4, _translate("MainWindow", "Dubai"))
-        self.comboBox_5.setItemText(5, _translate("MainWindow", "Nigeria"))
         self.label_21.setText(_translate("MainWindow", "Select Contry"))
         self.pushButton_14.setText(_translate("MainWindow", "Search"))
         self.comboBox_6.setItemText(0, _translate("MainWindow", "AND"))
         self.comboBox_6.setItemText(1, _translate("MainWindow", "OR"))
-        self.comboBox_6.setItemText(2, _translate("MainWindow", "NOT"))
         self.comboBox_7.setItemText(0, _translate("MainWindow", "AND"))
         self.comboBox_7.setItemText(1, _translate("MainWindow", "OR"))
-        self.comboBox_7.setItemText(2, _translate("MainWindow", "NOT"))
         self.comboBox_8.setItemText(0, _translate("MainWindow", "AND"))
         self.comboBox_8.setItemText(1, _translate("MainWindow", "OR"))
-        self.comboBox_8.setItemText(2, _translate("MainWindow", "NOT"))
         self.comboBox_9.setItemText(0, _translate("MainWindow", "AND"))
         self.comboBox_9.setItemText(1, _translate("MainWindow", "OR"))
-        self.comboBox_9.setItemText(2, _translate("MainWindow", "NOT"))
-        item = self.tableWidget.verticalHeaderItem(0)
-        item.setText(_translate("MainWindow", "1"))
-        item = self.tableWidget.verticalHeaderItem(1)
-        item.setText(_translate("MainWindow", "2"))
-        item = self.tableWidget.verticalHeaderItem(2)
-        item.setText(_translate("MainWindow", "3"))
-        item = self.tableWidget.verticalHeaderItem(3)
-        item.setText(_translate("MainWindow", "4"))
-        item = self.tableWidget.verticalHeaderItem(4)
-        item.setText(_translate("MainWindow", "5"))
-        item = self.tableWidget.verticalHeaderItem(5)
-        item.setText(_translate("MainWindow", "6"))
-        item = self.tableWidget.verticalHeaderItem(6)
-        item.setText(_translate("MainWindow", "7"))
-        item = self.tableWidget.verticalHeaderItem(7)
-        item.setText(_translate("MainWindow", "8"))
-        item = self.tableWidget.verticalHeaderItem(8)
-        item.setText(_translate("MainWindow", "9"))
-        item = self.tableWidget.horizontalHeaderItem(0)
+        item = self.tableWidget_5.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Full Name"))
-        item = self.tableWidget.horizontalHeaderItem(1)
+        item = self.tableWidget_5.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "Username"))
-        item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "Address"))
-        item = self.tableWidget.horizontalHeaderItem(3)
-        item.setText(_translate("MainWindow", "Job Designation"))
-        item = self.tableWidget.horizontalHeaderItem(4)
-        item.setText(_translate("MainWindow", "Company"))
-        item = self.tableWidget.horizontalHeaderItem(5)
+        item = self.tableWidget_5.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "Connections"))
-        item = self.tableWidget.horizontalHeaderItem(6)
+        item = self.tableWidget_5.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Country"))
+        item = self.tableWidget_5.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "Company"))
+        item = self.tableWidget_5.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "Job Designation"))
+        item = self.tableWidget_5.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "Address"))
+        self.lineEdit_9.setPlaceholderText(_translate("MainWindow", "From 0 to Any Number"))
+        self.lineEdit_10.setPlaceholderText(_translate("MainWindow", "Select Country"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Page"))
+        self.pushButton_15.setText(_translate("MainWindow", "Search"))
+        item = self.tableWidget_6.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Full Name"))
+        item = self.tableWidget_6.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Username"))
+        item = self.tableWidget_6.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Connections"))
+        item = self.tableWidget_6.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "Country"))
+        item = self.tableWidget_6.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "Company"))
+        item = self.tableWidget_6.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "Job Designation"))
+        item = self.tableWidget_6.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "Address"))
+        self.pushButton_16.setText(_translate("MainWindow", "Import"))
+        self.label_20.setText(_translate("MainWindow", "Table:"))
+        self.label_24.setText(_translate("MainWindow", "Type Search:"))
+        self.lineEdit_11.setPlaceholderText(_translate("MainWindow", "Any Entity"))
+        self.label_25.setText(_translate("MainWindow", "Import CSV File:"))
+        self.lineEdit_12.setPlaceholderText(_translate("MainWindow", "Imported File"))
+        self.pushButton_17.setText(_translate("MainWindow", "Export"))
+        self.label_26.setText(_translate("MainWindow", "Export Sorted Data"))
+        self.lineEdit_13.setPlaceholderText(_translate("MainWindow", "Enter Exported CSV file Name"))
+        self.pushButton_18.setText(_translate("MainWindow", "Advanced Search"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Page"))
         self.pushButton_5.setText(_translate("MainWindow", "Sort"))
         self.pushButton_4.setText(_translate("MainWindow", "Search"))
         self.label_2.setText(_translate("MainWindow", "<strong>LinkedIn</strong> Scraper"))
         self.pushButton_3.setText(_translate("MainWindow", "Scrape"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
